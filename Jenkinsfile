@@ -1,13 +1,6 @@
-pipeline {
-    agent any
-    options {
-        timeout(time: 30, unit: 'MINUTES') 
-    }
-    stages {
-        stage('Example') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-    }
-}
+@Library('tetsSharedLibraries')_
+
+ stage('Demo') {
+     echo 'Hello world'
+     lib1 'Alex'
+ }
